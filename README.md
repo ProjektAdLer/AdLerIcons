@@ -16,7 +16,7 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 
 ## 🚀 Verwendung
 
-1. **Besuche die Website**: [AdLer Icons](https://projektadler.github.io/AdLerIcons//)
+1. **Besuche die Website**: [AdLer Icons](https://projektadler.github.io/AdLerIcons/)
 2. **Icons durchsuchen**: Alle verfügbaren Icons werden automatisch geladen
 3. **Auswählen**: Klicke die Checkboxen der gewünschten Icons an
 4. **Herunterladen**:
@@ -59,6 +59,114 @@ AdLerIconRepo/
 ## 📝 Lizenz
 
 Alle Icons stehen unter der [MIT-Lizenz](https://opensource.org/licenses/MIT) und sind frei verwendbar.
+
+## ➕ Neue Icons hinzufügen
+
+### Schritt-für-Schritt Anleitung
+
+Um ein neues Icon zur AdLer Icons Website hinzuzufügen, folge diesen Schritten:
+
+#### 1. **Icon-Datei vorbereiten**
+
+```bash
+# Dein SVG-Icon sollte folgende Eigenschaften haben:
+- Format: SVG
+- Optimiert für Web (kleine Dateigröße)
+- Einheitlicher Stil zu bestehenden Icons
+- Aussagekräftiger Dateiname (z.B. "new-feature.svg")
+```
+
+#### 2. **Icon in den Ordner kopieren**
+
+```bash
+# Kopiere deine SVG-Datei in den icons/ Ordner
+cp dein-icon.svg icons/
+```
+
+#### 3. **Icon-Datenbank aktualisieren**
+
+Öffne die Datei `core-data/icon-database.js` und füge einen neuen Eintrag hinzu:
+
+```javascript
+{
+    id: 'dein-icon-id',                    // Eindeutige ID (ohne .svg)
+    filename: 'dein-icon.svg',             // Exakter Dateiname
+    translations: {
+        de: {
+            title: 'Deutscher Titel',
+            desc: 'Deutsche Beschreibung des Icons'
+        },
+        en: {
+            title: 'English Title',
+            desc: 'English description of the icon'
+        }
+    }
+}
+```
+
+**Wichtige Hinweise:**
+
+- Füge den Eintrag **alphabetisch sortiert** in das Array ein
+- Die `id` muss eindeutig und aussagekräftig sein
+- Die `filename` muss exakt mit der Datei im `icons/` Ordner übereinstimmen
+- Stelle sowohl deutsche als auch englische Übersetzungen bereit
+
+#### 4. **Änderungen testen**
+
+```bash
+# Lokalen Server starten
+npx http-server . -p 3000
+
+# Website im Browser öffnen: http://localhost:3000
+# Überprüfen:
+# ✅ Icon wird im Grid angezeigt
+# ✅ Titel und Beschreibung sind korrekt
+# ✅ Icon kann ausgewählt und heruntergeladen werden
+# ✅ Sprachenwechsel funktioniert
+```
+
+#### 5. **Tests ausführen**
+
+```bash
+# Automatisierte Tests ausführen
+npm run test
+
+# Bei Fehlern: Tests mit UI debuggen
+npm run test:ui
+```
+
+#### 6. **Änderungen committen**
+
+```bash
+git add icons/dein-icon.svg core-data/icon-database.js
+git commit -m "Add new icon: Dein Icon Name"
+git push origin main
+```
+
+#### 7. **Deployment überprüfen**
+
+Nach dem Push wird die Website automatisch über GitHub Pages aktualisiert. Überprüfe nach wenigen Minuten:
+
+- [AdLer Icons Website](https://projektadler.github.io/AdLerIcons/)
+- Dein neues Icon sollte verfügbar sein
+
+### 🔍 Troubleshooting
+
+**Icon wird nicht angezeigt?**
+
+- ✅ Prüfe den Dateinamen in `icon-database.js`
+- ✅ Stelle sicher, dass die SVG-Datei valide ist
+- ✅ Überprüfe die Browser-Konsole auf Fehler
+
+**Falsche Beschreibung/Titel?**
+
+- ✅ Überprüfe die Übersetzungen in `icon-database.js`
+- ✅ Teste beide Sprachen (DE/EN)
+
+**Download funktioniert nicht?**
+
+- ✅ SVG-Datei muss im `icons/` Ordner sein
+- ✅ Filename muss exakt übereinstimmen (Groß-/Kleinschreibung beachten)
 
 ## 🤝 Beitragen
 

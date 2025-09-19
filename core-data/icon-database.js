@@ -488,6 +488,20 @@
                 }
             },
             {
+                id: 'settings',
+                filename: 'setting.svg',
+                translations: {
+                    de: {
+                        title: 'Einstellungen',
+                        desc: 'Ein Icon für beispielsweise einen Button für Nutzendeneinstellungen'
+                    },
+                    en: {
+                        title: 'Settings',
+                        desc: 'An icon to be used for example for a button for user settings'
+                    }
+                }
+            },
+            {
                 id: 'smartphone',
                 filename: 'smartphone.svg',
                 translations: {
