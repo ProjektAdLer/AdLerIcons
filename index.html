@@ -1,12 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort einsatzbereit für Web, Mobile und Print.">
+    <meta name="keywords" content="SVG Icons, AdLer, Free Icons, Download, MIT License">
+    <meta property="og:title" content="AdLer Icon Repository">
+    <meta property="og:description" content="Hochwertige SVG-Icons für deine Projekte">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/AdLerIconRepo/">
+    <title>AdLer Icons</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    
+    <!-- Core Data -->
+    <script src="core-data/translations.js"></script>
+    <script src="core-data/icon-database.js"></script>
+    
+    <!-- Functionality Modules -->
+    <script src="functionality-modules/svg-handler.js"></script>
+    <script src="functionality-modules/selection-manager.js"></script>
+    <script src="functionality-modules/icon-grid.js"></script>
+    <script src="functionality-modules/download-manager.js"></script>
+    <script src="functionality-modules/language-manager.js"></script>
+    <script src="functionality-modules/sticky-download.js"></script>
+    <script src="functionality-modules/app-init.js"></script>
+    
+     <!-- Performance Optimizations -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- PWA Support -->
+    <meta name="theme-color" content="#007bff">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>This is a simple page to test GitHub Pages.</p>
+    <!-- Sticky Download Button (wird dynamisch angezeigt) -->
+    <div class="sticky-download-container" id="sticky-download-container">
+        <div class="sticky-download-content">
+            <div class="sticky-selection-info">
+                <span class="sticky-selection-count" id="sticky-selection-count">0</span>
+                <span data-translate="icons_selected">Icons ausgewählt</span>
+            </div>
+            <button 
+                class="sticky-download-btn" 
+                id="sticky-download-btn"
+                onclick="downloadSelectedIcons()"
+                disabled>
+                <span data-translate="download_selected">Ausgewählte herunterladen</span>
+            </button>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="language-switcher">
+            <button onclick="switchLanguage('de')" class="lang-btn active" id="lang-de">DE</button>
+            <button onclick="switchLanguage('en')" class="lang-btn" id="lang-en">EN</button>
+        </div>
+        <section class="header-content">
+            <img src="website-assets/adler-logo-3d-min.png" alt="AdLer Logo" class="adlerlogo">
+            <div class="header-text">
+                <h1 data-translate="title"></h1>
+                <p data-translate="subtitle" class="subtitle"></p>
+                <p data-translate="subtitletext" class="subtitletext"></p>
+            </div>
+        </section>
+    </header>
+
+    <div class="container">
+        <!-- Download Buttons -->
+        <div class="download-buttons-section">
+            <button onclick="downloadAllIcons()" class="download-all-btn" id="download-all-btn">
+                <span data-translate="download_all"></span>
+                <span class="download-count" id="download-count"></span>
+            </button>
+            
+            <button onclick="downloadSelectedIcons()" class="download-selected-btn" id="download-selected-btn" disabled>
+                <span data-translate="download_selected"></span>
+                <span class="selected-count" id="selected-count"></span>
+            </button>
+            
+            <div class="selection-controls">
+                <button class="select-all-button" onclick="selectAllIcons()" data-translate="select_all"></button>
+                <button class="deselect-all-button" onclick="deselectAllIcons()" data-translate="deselect_all"></button>
+                <span id="selection-info"></span>
+            </div>
+        </div>
+
+        <div class="icon-grid">
+            <!-- Icons werden dynamisch generiert -->
+        </div>
+    </div>
 </body>
 </html>
