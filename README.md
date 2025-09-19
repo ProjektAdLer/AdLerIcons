@@ -4,7 +4,7 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 
 ## 🌐 Live Demo
 
-**➡️ [AdLer Icons Website](https://splican.github.io/adLerIcons)**
+**➡️ [AdLer Icons Website](https://projektadler.github.io/AdLerIcons/)**
 
 ## ✨ Features
 
@@ -16,7 +16,7 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 
 ## 🚀 Verwendung
 
-1. **Besuche die Website**: [AdLer Icons](https://splican.github.io/adLerIcons/)
+1. **Besuche die Website**: [AdLer Icons](https://projektadler.github.io/AdLerIcons//)
 2. **Icons durchsuchen**: Alle verfügbaren Icons werden automatisch geladen
 3. **Auswählen**: Klicke die Checkboxen der gewünschten Icons an
 4. **Herunterladen**:
