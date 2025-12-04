@@ -30,6 +30,7 @@ body {
     border-radius: 15px;
     position: relative;
     max-width: 1200px;
+    background-color: white;
 }
 
 .subtitle {
