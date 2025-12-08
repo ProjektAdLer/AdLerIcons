@@ -2,26 +2,21 @@
 
 Dieses Repository dient zur Verbreitung und zur Verfügung Stellung von Icons, die während der Projektlaufzeit für die Tools des Projekt AdLer an der TH Aschaffenburg, HS Kempten entstanden sind. Kooperationspartner ist das zfh - Zentrum für Fernstudien im Hochschulverbund. Das Projekt wird gefördert von der Stiftung Innovation in der Hochschullehre.
 
-Alle Icons unterliegen der MIT Lizenz.
+## Lizenz
 
-MIT License
+### Icons (SVG-Dateien)
 
-Copyright (c) 2025 Projekt AdLer
+Alle Icons unterliegen der CC0-Lizenz und sind gemeinfrei (Public Domain).
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Die Person, die ein Werk mit dieser Deed verknüpft hat, hat dieses Werk in die Gemeinfreiheit - auch genannt Public Domain - entlassen, indem sie weltweit auf alle urheberrechtlichen und verwandten Schutzrechte verzichtet hat, soweit das gesetzlich möglich ist.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Sie dürfen das Werk kopieren, verändern, verbreiten und aufführen, auch zu kommerziellen Zwecken, ohne um weitere Erlaubnis bitten zu müssen.
+
+Weitere Informationen: https://creativecommons.org/public-domain/cc0/
+
+### Repository-Code
+
+Der Quellcode dieses Repositories (HTML, CSS, JavaScript) steht unter der Apache License 2.0.
+Weitere Informationen: http://www.apache.org/licenses/LICENSE-2.0

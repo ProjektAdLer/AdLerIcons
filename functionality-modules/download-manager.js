@@ -48,7 +48,8 @@ async function downloadAllIcons() {
 Diese ZIP-Datei enthält ${totalIcons} SVG-Icons aus dem AdLer Projekt.
 
 ## Lizenz
-Alle Icons stehen unter der MIT-Lizenz und sind frei verwendbar.
+Alle Icons stehen unter der CC0-Lizenz und sind gemeinfrei (Public Domain) - frei verwendbar ohne Einschränkungen.
+Weitere Informationen: https://creativecommons.org/public-domain/cc0/
 
 ## Verwendung
 Die SVG-Dateien können direkt in Web-, Mobile- und Print-Projekten verwendet werden.
@@ -156,7 +157,8 @@ Diese ZIP-Datei enthält ${totalIcons} ausgewählte SVG-Icons aus dem AdLer Proj
 ${selectedIconsArray.map(icon => `- ${icon.filename} (${icon.translations[currentLanguage].title})`).join('\n')}
 
 ## Lizenz
-Alle Icons stehen unter der MIT-Lizenz und sind frei verwendbar.
+Alle Icons stehen unter der CC0-Lizenz und sind gemeinfrei (Public Domain) - frei verwendbar ohne Einschränkungen.
+Weitere Informationen: https://creativecommons.org/public-domain/cc0/
 
 ## Verwendung
 Die SVG-Dateien können direkt in Web-, Mobile- und Print-Projekten verwendet werden.

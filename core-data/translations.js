@@ -12,7 +12,7 @@ const translations = {
         icons: 'Icons',
         title: "AdLer Icons",
         subtitle: "Hochwertige SVG-Icons für deine Projekte.",
-        subtitletext: "Alle im Projekt entstandenen Icons werden hier zum kostenfreien Download angeboten. Alle Icons stehen unter der MIT-License und sind frei verfügbar und nutzbar.",
+        subtitletext: "Alle im Projekt entstandenen Icons werden hier zum kostenfreien Download angeboten. Alle Icons stehen unter der CC0-Lizenz und sind gemeinfrei (Public Domain) - frei verfügbar und nutzbar ohne Einschränkungen.",
         // Neue Platzhalter-Texte
         icon_count_format: "({count} Icons)",
         selected_count_format: "({count} ausgewählt)",
@@ -35,7 +35,7 @@ const translations = {
         icons: 'Icons',
         title: "AdLer Icons",
         subtitle: "High-quality SVG icons for your projects.",
-        subtitletext: "All icons created in the project are offered here for free download. All icons are under the MIT license and are freely available and usable.",
+        subtitletext: "All icons created in the project are offered here for free download. All icons are under the CC0 license and are in the Public Domain - freely available and usable without restrictions.",
         // Neue Platzhalter-Texte
         icon_count_format: "({count} Icons)",
         selected_count_format: "({count} selected)",

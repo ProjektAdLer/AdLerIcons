@@ -12,9 +12,9 @@
     "test": "tests"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "author": "Projekt AdLer",
+  "license": "Apache-2.0",
+  "description": "AdLer Icon Repository - SVG icons under CC0, code under Apache 2.0",
   "devDependencies": {
     "@playwright/test": "^1.54.1"
   }

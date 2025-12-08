@@ -12,7 +12,7 @@ Hochwertige SVG-Icons für deine Projekte. Kostenlos zum Download und sofort ein
 - 📱 **Responsive Design** - Mobile & Desktop
 - ⚡ **Schnelle Downloads** - Einzeln oder als ZIP
 - 🔄 **Icon-Auswahl** - Wähle nur die Icons, die du brauchst
-- 🆓 **MIT-Lizenz** - Frei verwendbar für alle Projekte
+- 🆓 **CC0-Lizenz** - Public Domain, frei verwendbar für alle Projekte
 
 ## 🚀 Verwendung
 
@@ -58,7 +58,13 @@ AdLerIconRepo/
 
 ## 📝 Lizenz
 
-Alle Icons stehen unter der [MIT-Lizenz](https://opensource.org/licenses/MIT) und sind frei verwendbar.
+### Icons (SVG-Dateien im `/icons` Ordner)
+
+Alle Icons stehen unter der [CC0-Lizenz](https://creativecommons.org/public-domain/cc0/) und sind gemeinfrei (Public Domain) - frei verwendbar ohne Einschränkungen.
+
+### Repository-Code (HTML, CSS, JavaScript)
+
+Der Quellcode dieser Website steht unter der [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
 ## ➕ Neue Icons hinzufügen
 
